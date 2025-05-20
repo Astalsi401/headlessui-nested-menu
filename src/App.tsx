@@ -42,12 +42,12 @@ const data: MenuItemType[] = [
 
 export const App: React.FC = () => {
   return (
-    <div className="min-w-screen min-h-screen grid content-center">
+    <div className="min-w-screen min-h-screen grid content-center bg-gradient-to-r from-blue-950 to-teal-900">
       <NestMenu
-        className="mx-auto"
+        className="mx-auto backdrop-blur-md"
         items={data}
         btn={
-          <div className="flex items-center">
+          <div className="flex items-center text-white">
             <Bars3CenterLeftIcon className="size-10" />
             Open Nested Menu
           </div>

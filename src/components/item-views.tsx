@@ -3,7 +3,7 @@ import { Button } from "@headlessui/react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import type { MenuItemType } from "@/types";
 
-const menuItemStyles = ["hover:bg-violet-500 hover:text-white", "text-gray-900", "cursor-pointer group w-full rounded-md px-2 py-2 text-sm flex items-center"];
+const menuItemStyles = ["hover:bg-white/80 hover:text-gray-900", "text-white", "cursor-pointer group w-full rounded-md px-2 py-2 text-sm flex items-center"];
 
 export const renderNestItems = (label: React.ReactNode, submenuVisible: boolean, subMenuToggle: (e: React.MouseEvent<HTMLButtonElement>) => void, close: () => void, href?: string, onClick?: () => void, items?: MenuItemType[]) => {
   if (items) {
